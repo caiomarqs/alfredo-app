@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import AlfredoLogo from '@/components/AlfredoLogo';
 export const SplashScreen: React.FC = () => {
   const navigate = useNavigate();
   const {
@@ -19,8 +20,8 @@ export const SplashScreen: React.FC = () => {
   }, [navigate, isAuthenticated, isLoading]);
   return <div className="flex flex-col items-center justify-center h-screen bg-white">
       <div className="flex flex-col items-center">
-        <div className="w-24 h-24 rounded-full bg-[#4A90E2] flex items-center justify-center mb-6 animate-pulse">
-          <span className="text-white text-3xl font-bold">A</span>
+        <div className="w-24 h-24 flex items-center justify-center mb-6 animate-pulse">
+          <AlfredoLogo />
         </div>
         <h1 className="text-3xl font-bold text-gray-800 mb-2">Alfredo</h1>
         <p className="text-gray-500">Gestão de Condomínios</p>
