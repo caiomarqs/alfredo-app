@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, Users, Megaphone, AlertCircle, BarChart2, Calendar, BookOpen, DollarSign, Settings, ChevronRight, ChevronDown, X, Shield, User, LogOut, BoxIcon } from 'lucide-react';
+import { Home, Users, Megaphone, Calendar, DollarSign, Settings, ChevronRight, ChevronDown, X, LogOut, BoxIcon } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 interface NavItemProps {
   to: string;

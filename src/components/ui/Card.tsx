@@ -1,6 +1,5 @@
 import React from 'react';
 import { cn } from '../../utils';
-import { shadows, borderRadius } from '../../constants';
 
 export interface CardProps {
   children: React.ReactNode;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, Users, Calendar, DollarSign, Menu } from 'lucide-react';
+import { Home, Users, Calendar, DollarSign } from 'lucide-react';
 export const AdminMobileNav: React.FC = () => {
   const navItems = [{
     to: '/admin',

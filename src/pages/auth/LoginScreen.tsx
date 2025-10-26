@@ -4,6 +4,7 @@ import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { Button } from '../../components/ui/Button';
 import { Input } from '../../components/ui/Input';
+import AlfredoLogo from '@/components/AlfredoLogo';
 export const LoginScreen: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -30,8 +31,8 @@ export const LoginScreen: React.FC = () => {
   return <div className="min-h-screen bg-white p-6 flex flex-col">
       <div className="flex-1 flex flex-col justify-center max-w-md mx-auto w-full">
         <div className="text-center mb-10">
-          <div className="w-24 h-24 rounded-full bg-[#4A90E2] flex items-center justify-center mb-6 mx-auto shadow-lg">
-            <span className="text-white text-3xl font-bold">A</span>
+          <div className="w-24 h-24 flex items-center justify-center mb-6 mx-auto">
+            <AlfredoLogo/>
           </div>
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
             Bem-vindo ao Alfredo

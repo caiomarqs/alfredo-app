@@ -1,6 +1,5 @@
-import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Home, MessageSquare, Calendar, DollarSign, User, FileText, BarChart } from 'lucide-react';
+import { Home, MessageSquare, Calendar, DollarSign, User } from 'lucide-react';
 const navItems = [{
   to: '/resident',
   icon: Home,
@@ -40,7 +39,6 @@ export const BottomNavigation = () => {
   return <nav className="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-100">
       <div className="flex justify-around items-center h-20 max-w-2xl mx-auto">
         {navItems.map(item => {
-        const isActive = item.to === '/resident' && location.pathname === '/resident' || item.to !== '/resident' && location.pathname.startsWith(item.to);
         // Check if any subitem is active
         const hasActiveSubItem = item.subItems?.some(subItem => location.pathname === subItem.to);
         return <NavLink key={item.to} to={item.to} className="flex flex-col items-center justify-center w-full h-full">

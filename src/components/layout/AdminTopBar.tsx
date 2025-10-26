@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Menu, Bell, Search, X, User, LogOut, Settings } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
-import { Badge } from '../ui/Badge';
 interface AdminTopBarProps {
   toggleSidebar: () => void;
 }
